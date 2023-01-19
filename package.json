@@ -1,0 +1,27 @@
+{
+  "name": "untitled-ui-kit-backend",
+  "version": "0.2.1",
+  "description": "backend services for the untitled ui kit",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elite-coder-5150/untitled-ui-kit-backend.git"
+  },
+  "keywords": [
+    "untitled-ui-kit",
+    "express"
+  ],
+  "author": "Darrell Parkhouse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elite-coder-5150/untitled-ui-kit-backend/issues"
+  },
+  "homepage": "https://github.com/elite-coder-5150/untitled-ui-kit-backend#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.18.2"
+  }
+}
