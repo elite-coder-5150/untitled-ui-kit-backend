@@ -2,6 +2,8 @@ import { Mongoose } from "mongoose";
 import { Schema } from "mongoose";
 import { Express, Router } from "express";
 
+
+
 const NewsletterSchema = new Schema({
     firstName: {
         type: String,
