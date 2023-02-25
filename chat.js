@@ -8,7 +8,9 @@ const chatWindow = document.querySelector('.group-char-card')
 const chatMsgs = document.querySelector('.chat-messages');
 const sendBtn = document.querySelector('.primary-sm')
 const msgInput = document.querySelector('.msg-input');
-
+const loginBtn = document.querySelector('.login-btn');
+const usernameInput = document.querySelector('.username-input')
+const login = document.querySelector('.')
 let socket = io();
 
 socket.on('message', message => {
@@ -75,6 +77,17 @@ sendBtn.addEventListener('click', (e) => {
     sendMessage(message);
 
     msgInput.value = ''
+})
+
+loginBtn.addEventListener('click', e => {
+    e.preventDefault();
+
+    if (!usernameInput.value) {
+        return console.log('must supply a username')
+    }
+
+    username = usernameInput.value
+    sendMessage({ author: username, type: messageTypes.LOGIN});
 })
 
 const sendMessage = message => {
