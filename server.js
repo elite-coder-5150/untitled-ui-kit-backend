@@ -6,6 +6,9 @@ import { http, server } from 'http'
 import { io } from 'socket.io'
 import { path } from 'path'
 
+// import the controller
+import { ChatController } from './controllers';
+
 app.use(express.static(path.join(__dirname, + 'public/index.html')))
 
 io.on('connection', socket => {
